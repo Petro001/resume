@@ -34,20 +34,21 @@
         <section>
             {{> title data='My hobbies'}}
 </div>
-<ul>
-    {{#each hobbies}}
-    <li>
-        {{name}}
+<div>
+    <ul>
+        {{#each hobbies}}
+        <li>
+            {{name}}
 
-        {{#if isMain includeZero=true}} (favourite) {{/if}}
+            {{#if isMain includeZero=true}} (favourite) {{/if}}
 
 
-    </li>
-    {{/each}}
-</ul>
-</section>
-</main>
-{{/with}}
+        </li>
+        {{/each}}
+    </ul>
+    </section>
+    </main>
+    {{/with}}
 </div>
 
 {{!--
