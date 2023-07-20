@@ -1,0 +1,167 @@
+<div>
+    <h1>Web</h1>
+    <section>
+        {{#with web}}
+        {{#each languages}}
+        <div>
+            {{name}}
+        </div>
+        <div>
+            {{version}}
+        </div>
+        <div>
+            <description>
+                {{description}}
+            </description>
+        </div>
+        {{#each elements}}
+        <div>
+            {{name}}
+        </div>
+        <div>
+            <description>
+                {{description}}
+            </description>
+        </div>
+        {{#each attributes}}
+        <div>
+            {{name}}
+        </div>
+        <div>
+            <description>
+                {{description}}
+            </description>
+        </div>
+        {{/each}}
+        <div>
+            {{name}}
+        </div>
+        <div>
+            <description>
+                {{description}}
+            </description>
+        </div>
+        {{#each attributes}}
+        <div>
+            {{name}}
+        </div>
+        <div>
+            <description>
+                {{description}}
+            </description>
+        </div>
+        {{/each}}
+        {{/each}}
+        <div>
+            {{name}}
+        </div>
+        <div>
+            <version>
+                {{version}}
+            </version>
+        </div>
+        <div>
+            <description>
+                {{description}}
+            </description>
+        </div>
+        {{#each properties}}
+        <div>
+            {{name}}
+        </div>
+        <div>
+            <description>
+                {{description}}
+            </description>
+        </div>
+        {{#each values}}
+        <div>
+            {{value}}
+        </div>
+        <div>
+            <description>
+                {{description}}
+            </description>
+        </div>
+        {{/each}}
+        {{/each}}
+
+        <div>
+            {{name}}
+        </div>
+        <div>
+            <discription>
+                {{description}}
+            </discription>
+        </div>
+        {{#each values}}
+        <div>
+            {{value}}
+        </div>
+        <div>
+            <description>
+                {{description}}
+            </description>
+        </div>
+        {{/each}}
+        <div>
+            {{name}}
+        </div>
+        <div>
+            {{version}}
+        </div>
+        <div>
+            <description>
+                {{description}}
+            </description>
+        </div>
+        {{#each functions}}
+        <div>
+            {{name}}
+        </div>
+        <div>
+            <description>
+                {{description}}
+            </description>
+        </div>
+        {{#each parameters}}
+        <div>
+            {{name}}
+        </div>
+        <div>
+            {{type}}
+        </div>
+        <div>
+            <description>
+                {{description}}
+            </description>
+        </div>
+        {{/each}}
+        <div>
+            {{name}}
+        </div>
+        <div>
+            <description>
+                {{description}}
+            </description>
+        </div>
+        {{#each parameters}}
+        <div>
+            {{name}}
+        </div>
+        <div>
+            {{type}}
+        </div>
+        <div>
+            <description>
+                {{description}}
+            </description>
+        </div>
+        {{/each}}
+        {{/each}}
+
+
+        {{/each}}
+        {{/with}}
+    </section>
+</div>
