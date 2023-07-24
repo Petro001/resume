@@ -1,0 +1,92 @@
+<div>
+    <section>
+        <div>
+            <h1>{{name}}</h1>
+        </div>
+        <div>
+            <description>
+                {{description}}
+            </description>
+        </div>
+        <br>
+        <div>
+            {{#with history}}
+
+            <span class="badge text-bg-primary">{{year}}</span>
+            <div>
+                <span class="badge text-bg-secondary">{{founder}}</span>
+            </div>
+            {{/with}}
+        </div>
+        <br>
+        <hr>
+        <div>
+            <h3>Types</h3>
+            <ul class="list-group">
+                <li class="list-group-item">Number</li>
+                <li class="list-group-item">String</li>
+                <li class="list-group-item">Boolean</li>
+                <li class="list-group-item">Null</li>
+                <li class="list-group-item">Undefined</li>
+                <li class="list-group-item">Symbol</li>
+                <li class="list-group-item">Object</li>
+            </ul>
+        </div>
+        <div>
+            {{#with syntax}}
+            <div><span class="badge text-bg-secondary">{{variables}}</span></div>
+            <div><span class="badge text-bg-secondary">{{functions}}</span></div>
+            <div><span class="badge text-bg-secondary">{{conditionals}}</span></div>
+            <div><span class="badge text-bg-secondary">{{loops}}</span></div>
+            <div><span class="badge text-bg-secondary">{{classes}}</span></div>
+            {{/with}}
+        </div>
+        <br>
+        <hr>
+        <div>
+            <h3>Fetures</h3>
+            <ul class="list-group">
+                <li class="list-group-item">First-class functions</li>
+                <li class="list-group-item">Closures</li>
+                <li class="list-group-item">Dynamic typing</li>
+                <li class="list-group-item">Prototype-based inheritance</li>
+                <li class="list-group-item">Asynchronous programming with Promises and async/await</li>
+                <li class="list-group-item">SModules with import/export statementsymbol</li>
+            </ul>
+        </div>
+        <br>
+        <hr>
+        <div>
+            <h3>Libraries</h3>
+            <div><span class="badge text-bg-secondary">jQuery</span></div>
+            <div><span class="badge text-bg-secondary">React</span></div>
+            <div><span class="badge text-bg-secondary">Angular</span></div>
+            <div><span class="badge text-bg-secondary">Vue</span></div>
+            <div><span class="badge text-bg-secondary">Node.js</span></div>
+            <div><span class="badge text-bg-secondary">Express.js</span></div>
+            <div><span class="badge text-bg-secondary">Lodash</span></div>
+            <div><span class="badge text-bg-secondary">Moment.js</span></div>
+        </div>
+        <br>
+        <hr>
+        <div>
+            <h3>Tools</h3>
+            <div><span class="badge text-bg-success">Babel</span></div>
+            <div><span class="badge text-bg-success">Webpack</span></div>
+            <div><span class="badge text-bg-success">ESLink</span></div>
+            <div><span class="badge text-bg-success">Jest</span></div>
+            <div><span class="badge text-bg-success">Mocha</span></div>
+            <div><span class="badge text-bg-success">Chai</span></div>
+            <div><span class="badge text-bg-success">Selenium</span></div>
+            <div><span class="badge text-bg-success">Cypress</span></div>
+        </div>
+        <br>
+        <hr>
+        <div>
+            {{#each community}}
+            <div><br>{{name}}</div>
+            <div>{{type}}</div>
+            {{/each}}
+        </div>
+    </section>
+</div>
