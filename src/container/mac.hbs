@@ -1,0 +1,140 @@
+<div>
+    <section>
+        <div>
+            <h1>{{name}}</h1>
+        </div>
+        <div>
+            <description>
+                {{description}}
+            </description>
+        </div>
+        <br>
+        <div>
+            <button type="button" class="btn btn-outline-primary">{{price}}</button>
+        </div>
+        <br>
+        <hr>
+        <h4>Features</h4>
+        <div>
+            {{#with features}}
+            <h5>Processor</h5>
+            {{#with processor}}
+            <div><span class="badge text-bg-success">{{brand}}</span></div>
+            <div>
+                <span class="badge text-bg-success">{{model}}</span>
+            </div>
+            <div>
+                <span class="badge text-bg-success">{{speed}}</span>
+            </div>
+            <div>
+                <span class="badge text-bg-success">{{corse}}</span>
+            </div>
+            <div>
+                <span class="badge text-bg-success">{{cache}}</span>
+            </div>
+            {{/with}}
+            <br>
+            <hr>
+            <h5>Memory</h5>
+            {{#with memory}}
+            <div>
+                <span class="badge text-bg-info">{{type}}</span>
+            </div>
+            <div>
+                <span class="badge text-bg-info">{{size}}</span>
+            </div>
+            <div>
+                <span class="badge text-bg-info">{{speed}}</span>
+            </div>
+            {{/with}}
+            <br>
+            <hr>
+            <h5>Storage</h5>
+            {{#with storage}}
+            <button type="button" class="btn btn-primary btn-sm">{{type}}</button>
+            <button type="button" class="btn btn-primary btn-sm">{{size}}</button>
+            {{/with}}
+            <h5>Display</h5>
+            {{#with display}}
+            <div>
+                <button type="button" class="btn btn-outline-secondary">{{size}}</button>
+            </div>
+            <div>
+                <button type="button" class="btn btn-outline-secondary">{{resolution}}</button>
+            </div>
+            <div>
+                <button type="button" class="btn btn-outline-secondary">{{technology}}</button>
+            </div>
+            <div>
+                <button type="button" class="btn btn-outline-secondary">{{color_space}}</button>
+            </div>
+            <div>
+                <button type="button" class="btn btn-outline-secondary">{{brightness}}</button>
+            </div>
+            <div>
+                <button type="button" class="btn btn-outline-secondary">{{refresh_rate}}</button>
+            </div>
+            {{/with}}
+            <br>
+            <hr>
+            <h5>Graphics</h5>
+            {{#with graphics}}
+            <div>
+                <span class="badge text-bg-danger">{{brand}}</span>
+            </div>
+            <div>
+                <span class="badge text-bg-danger">{{model}}</span>
+            </div>
+            <div>
+                <span class="badge text-bg-danger">{{memory}}</span>
+            </div>
+            {{/with}}
+            <br>
+            <hr>
+            <h5>Ports</h5>
+            {{#each ports}}
+            <div>
+                <span class="badge text-bg-warning">{{type}}</span>
+            </div>
+            <div>
+                <span class="badge text-bg-warning">{{count}}</span>
+            </div>
+            <div>
+                <span class="badge text-bg-warning">{{features}}</span>
+            </div>
+            {{/each}}
+            <br>
+            <hr>
+            <h5>Battery</h5>
+            {{#with battery}}
+            <div>
+                <span class="badge text-bg-dark">{{type}}</span>
+            </div>
+            <div>
+                <span class="badge text-bg-dark">{{capacity}}</span>
+            </div>
+            <div>
+                <span class="badge text-bg-dark">{{life}}</span>
+            </div>
+            {{/with}}
+            <br>
+            <hr>
+            <h5>Operating_system</h5>
+            <div>
+                <span class="badge text-bg-light">{{operating_system}}</span>
+            </div>
+            <br>
+            <hr>
+            <h5>Accessories</h5>
+            {{#each accessories}}
+            <div>
+                <span class="badge rounded-pill text-bg-info">{{name}}</span>
+            </div>
+            <div>
+                <button type="button" class="btn btn-info">{{price}}</button>
+            </div>
+            {{/each}}
+            {{/with}}
+        </div>
+    </section>
+</div>
