@@ -1,0 +1,316 @@
+<div>
+    <section>
+        <div>
+            <h1>{{name}}</h1>
+        </div>
+        <br>
+        <hr>
+        <h5>Users</h5>
+        {{#each users}}
+        <div>
+            <button type="button" class="btn btn-outline-primary">{{id}}</button>
+        </div>
+        <div>
+            <button type="button" class="btn btn-outline-primary">{{name}}</button>
+        </div>
+        <div>
+            <button type="button" class="btn btn-outline-primary">{{gender}}</button>
+        </div>
+        <div>
+            <button type="button" class="btn btn-outline-primary">{{age}}</button>
+        </div>
+        <br>
+        <hr>
+        <h5>Friends</h5>
+        {{#each friends}}
+        <div>
+            <button type="button" class="btn btn-outline-danger">{{id}}</button>
+        </div>
+        <div>
+            <button type="button" class="btn btn-outline-danger">{{gender}}</button>
+        </div>
+        <div>
+            <button type="button" class="btn btn-outline-danger">{{age}}</button>
+        </div>
+        <br>
+        <hr>
+        <h5>Mutual_friends</h5>
+        {{#each mutual_friends}}
+        <div>
+            <button type="button" class="btn btn-outline-info">{{id}}</button>
+        </div>
+        <div>
+            <button type="button" class="btn btn-outline-info">{{name}}</button>
+        </div>
+        <div>
+            <button type="button" class="btn btn-outline-info">{{gender}}</button>
+        </div>
+        <div>
+            <button type="button" class="btn btn-outline-info">{{age}}</button>
+        </div>
+        {{/each}}
+        <div>
+            <button type="button" class="btn btn-outline-warning">{{id}}</button>
+        </div>
+        <div>
+            <button type="button" class="btn btn-outline-warning">{{name}}</button>
+        </div>
+        <div>
+            <button type="button" class="btn btn-outline-warning">{{gender}}</button>
+        </div>
+        <div>
+            <button type="button" class="btn btn-outline-warning">{{age}}</button>
+        </div>
+        <br>
+        <hr>
+        <h5>Mutual_friends</h5>
+        {{#each mutual_friends}}
+        <div>
+            <button type="button" class="btn btn-outline-success">{{id}}</button>
+        </div>
+        <div>
+            <button type="button" class="btn btn-outline-success">{{name}}</button>
+        </div>
+        <div>
+            <button type="button" class="btn btn-outline-success">{{gender}}</button>
+        </div>
+        <div>
+            <button type="button" class="btn btn-outline-success">{{age}}</button>
+        </div>
+        {{/each}}
+        {{/each}}
+        <br>
+        <hr>
+        <h5>Groups</h5>
+        {{#each groups}}
+        <div>
+            <button type="button" class="btn btn-outline-dark">{{id}}</button>
+        </div>
+        <div>
+            <button type="button" class="btn btn-outline-dark">{{name}}</button>
+        </div>
+        <div>
+            <description>
+                <span class="badge text-bg-dark">{{description}}</span>
+            </description>
+        </div>
+        <br>
+        <hr>
+        <h5>Members</h5>
+        {{#each members}}
+        <div>
+            <button type="button" class="btn btn-outline-secondary">{{id}}</button>
+        </div>
+        <div>
+            <button type="button" class="btn btn-outline-secondary">{{name}}</button>
+        </div>
+        <div>
+            <button type="button" class="btn btn-outline-secondary">{{gender}}</button>
+        </div>
+        <div>
+            <button type="button" class="btn btn-outline-secondary">{{age}}</button>
+        </div>
+        {{/each}}
+
+        {{/each}}
+        <br>
+        <hr>
+        <div>
+            <button type="button" class="btn btn-outline-warning">{{id}}</button>
+        </div>
+        <div>
+            <button type="button" class="btn btn-outline-warning">{{name}}</button>
+        </div>
+        <div>
+            <description>
+                <span class="badge text-bg-warning">{{description}}</span>
+            </description>
+        </div>
+        <h5>Members</h5>
+        {{#each members}}
+        <div>
+            <button type="button" class="btn btn-outline-success">{{id}}</button>
+        </div>
+        <div>
+            <button type="button" class="btn btn-outline-success">{{name}}</button>
+        </div>
+        <div>
+            <button type="button" class="btn btn-outline-success">{{gender}}</button>
+        </div>
+        <div>
+            <button type="button" class="btn btn-outline-success">{{age}}</button>
+        </div>
+        <br>
+        <div>
+            <button type="button" class="btn btn-outline-success">{{id}}</button>
+        </div>
+        <div>
+            <button type="button" class="btn btn-outline-success">{{name}}</button>
+        </div>
+        <div>
+            <button type="button" class="btn btn-outline-success">{{gender}}</button>
+        </div>
+        <div>
+            <button type="button" class="btn btn-outline-success">{{age}}</button>
+        </div>
+        {{/each}}
+        <br>
+        <hr>
+        <div>
+            <button type="button" class="btn btn-outline-info">{{id}}</button>
+        </div>
+        <div>
+            <button type="button" class="btn btn-outline-info">{{name}}</button>
+        </div>
+        <div>
+            <button type="button" class="btn btn-outline-info">{{gender}}</button>
+        </div>
+        <div>
+            <button type="button" class="btn btn-outline-info">{{age}}</button>
+        </div>
+        <br>
+        <hr>
+        <h5>Friends</h5>
+        {{#each friends}}
+        <div>
+            <button type="button" class="btn btn-outline-primary">{{id}}</button>
+        </div>
+        <div>
+            <button type="button" class="btn btn-outline-primary">{{name}}</button>
+        </div>
+        <div>
+            <button type="button" class="btn btn-outline-primary">{{gender}}</button>
+        </div>
+        <div>
+            <button type="button" class="btn btn-outline-primary">{{age}}</button>
+        </div>
+        <br>
+        <hr>
+        <h5>Mutual_friends</h5>
+        {{#each mutual_friends}}
+        <div>
+            <button type="button" class="btn btn-outline-secondary">{{id}}</button>
+        </div>
+        <div>
+            <button type="button" class="btn btn-outline-secondary">{{name}}</button>
+        </div>
+        <div>
+            <button type="button" class="btn btn-outline-secondary">{{gender}}</button>
+        </div>
+        <div>
+            <button type="button" class="btn btn-outline-secondary">{{age}}</button>
+        </div>
+        <br>
+        <div>
+            <button type="button" class="btn btn-outline-secondary">{{id}}</button>
+        </div>
+        <div>
+            <button type="button" class="btn btn-outline-secondary">{{name}}</button>
+        </div>
+        <div>
+            <button type="button" class="btn btn-outline-secondary">{{gender}}</button>
+        </div>
+        <div>
+            <button type="button" class="btn btn-outline-secondary">{{age}}</button>
+        </div>
+        <br>
+        <hr>
+        <h5>Mutual_friends</h5>
+        {{#each mutual_friends}}
+        <div>
+            <button type="button" class="btn btn-outline-dark">{{id}}</button>
+        </div>
+        <div>
+            <button type="button" class="btn btn-outline-dark">{{name}}</button>
+        </div>
+        <div>
+            <button type="button" class="btn btn-outline-dark">{{gender}}</button>
+        </div>
+        <div>
+            <button type="button" class="btn btn-outline-dark">{{age}}</button>
+        </div>
+        {{/each}}
+        {{/each}}
+        <br>
+        <hr>
+        <h5>Groups</h5>
+        {{#each groups}}
+        <div>
+            <button type="button" class="btn btn-outline-info">{{id}}</button>
+        </div>
+        <div>
+            <button type="button" class="btn btn-outline-info">{{name}}</button>
+        </div>
+        <div>
+            <description>
+                <span class="badge text-bg-info">{{description}}</span>
+            </description>
+        </div>
+        <br>
+        <hr>
+        <h5>Members</h5>
+        {{#each members}}
+        <div>
+            <button type="button" class="btn btn-outline-primary">{{id}}</button>
+        </div>
+        <div>
+            <button type="button" class="btn btn-outline-primary">{{name}}</button>
+        </div>
+        <div>
+            <button type="button" class="btn btn-outline-primary">{{gender}}</button>
+        </div>
+        <div>
+            <button type="button" class="btn btn-outline-primary">{{age}}</button>
+        </div>
+        {{/each}}
+        <br>
+        <hr>
+        <div>
+            <button type="button" class="btn btn-outline-danger">{{id}}</button>
+        </div>
+        <div>
+            <button type="button" class="btn btn-outline-danger">{{name}}</button>
+        </div>
+        <div>
+            <description>
+                <span class="badge text-bg-danger">{{description}}</span>
+            </description>
+        </div>
+        <br>
+        <hr>
+        <h5>Members</h5>
+        {{#each members}}
+        <div>
+            <button type="button" class="btn btn-outline-secondary">{{id}}</button>
+        </div>
+        <div>
+            <button type="button" class="btn btn-outline-secondary">{{name}}</button>
+        </div>
+        <div>
+            <button type="button" class="btn btn-outline-secondary">{{gender}}</button>
+        </div>
+        <div>
+            <button type="button" class="btn btn-outline-secondary">{{age}}</button>
+        </div>
+        <br>
+        <div>
+            <button type="button" class="btn btn-outline-secondary">{{id}}</button>
+        </div>
+        <div>
+            <button type="button" class="btn btn-outline-secondary">{{name}}</button>
+        </div>
+        <div>
+            <button type="button" class="btn btn-outline-secondary">{{gender}}</button>
+        </div>
+        <div>
+            <button type="button" class="btn btn-outline-secondary">{{age}}</button>
+        </div>
+        {{/each}}
+        {{/each}}
+
+
+
+        {{/each}}
+        {{/each}}
+    </section>
+</div>
