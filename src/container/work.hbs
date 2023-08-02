@@ -7,16 +7,20 @@
 	{{#with main}}
 	<main>
 		<section>
-			{{> title data="work history" big=true}}
+			<div class="mb-5">
+				{{> title data="work history" big=true}}
+			</div>
 			<div>
 				<ul>
 					{{#each works}}
-					<li>
-						<div>{{position}}</div>
+					<li class="mb-5">
+						<div>
+							{{position}}
+						</div>
 
 						<br>
 
-						<div>
+						<div class="mb-5">
 							{{duration.from}}
 							-
 							{{#if duration.to}}
