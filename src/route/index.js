@@ -39,7 +39,20 @@ router.get('/', function (req, res) {
   // res.render генерує нам HTML сторінку
 
   //            ↙ cюди вводимо назву файлу з сontainer
-  res.render('index', {})
+  res.render('index', {
+    layout: 'index',
+    page: {
+      title: 'Resume | Index',
+    },
+    main: {
+      index: {
+        firstname: 'Palinchak',
+        name: 'Petro',
+        Projectname: 'Resume project',
+        text: 'Я студент в школі програмування IT-Brains де вивчаю мову програмування JavaScript.',
+      },
+    },
+  })
   //                  ↑↑ сюди вводимо JSON дані
 })
 
@@ -3383,6 +3396,11 @@ router.get('/shopcatalog', function (req, res) {
 })
 
 // ================================================================
+
+
+
+
+
 
 // Підключаємо роутер до бек-енду
 module.exports = router
